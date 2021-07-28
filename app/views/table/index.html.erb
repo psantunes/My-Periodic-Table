@@ -1,0 +1,70 @@
+  <table>
+    <%# variável i percorre o eixo y da matriz %>
+    <% for i in 1..7 do %>
+      <tr>
+      <%# variável j percorre o eixo x da matriz %>
+      <% for j in 1..18 do %>
+        <td>
+        <%# percorro a lista de elementos, populando quando encontrar valores xpos e ypos correspondentes %>
+        <% @elements["order"].each do |element| %>  
+          <% if i == @elements[element]["ypos"] && j == @elements[element]["xpos"] %>
+            <%= link_to table_path(id: element) do %>
+            <section class="c<%= @elements[element]["number"] %>">
+              <%= @elements[element]["number"] %><br>
+              <h5><%= @elements[element]["symbol"] %></h5>
+              <%= @elements[element]["name"] %><br>
+              <%= @elements[element]["atomic_mass"].round(2) %>
+            </section>
+            <% end %>
+          <% end %>
+        <% end %>
+        <%# validação para imprimir o número dos lantanideos e actinideos %>
+        <% if i == 6 && j == 3 %>
+          <h5 style="text-align:center;">57-71</h5>
+        <% end %>
+        <% if i == 7 && j == 3 %>
+          <h5 style="text-align:center;">89-103</h5>
+        <% end %>
+        </td>
+      <% end %>
+      </tr>
+    <% end %>
+  </table>
+
+    <%# tabela dos lantanideos e actinideos %>
+    <table class="second_table">
+      <tr>
+        <%# percorro a lista de elementos, populando com os lantanideos %>
+        <% @elements["order"].each do |element| %>  
+          <% if @elements[element]["category"] == "lanthanide" %>
+            <td>
+              <%= link_to table_path(id: element) do %>
+                <section class="c<%= @elements[element]["number"] %>">
+                  <%= @elements[element]["number"] %><br>
+                  <h5><%= @elements[element]["symbol"] %></h5>
+                  <%= @elements[element]["name"] %><br>
+                  <%= @elements[element]["atomic_mass"].round(2) %>
+                </section>
+              <% end %>
+            </td>
+          <% end %>
+        <% end %>
+      </tr>
+      <tr>
+        <%# percorro a lista de elementos, populando com os actinideos %>
+        <% @elements["order"].each do |element| %>  
+          <% if @elements[element]["category"] == "actinide" %>
+            <td>
+              <%= link_to table_path(id: element) do %>
+                <section class="c<%= @elements[element]["number"] %>">
+                  <%= @elements[element]["number"] %><br>
+                  <h5><%= @elements[element]["symbol"] %></h5>
+                  <%= @elements[element]["name"] %><br>
+                  <%= @elements[element]["atomic_mass"].round(2) %>
+                </section>
+              <% end %>
+            </td>
+          <% end %>
+        <% end %>
+      </tr>
+  </table>

@@ -1,0 +1,194 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500");
+ @import "font-awesome";
+
+ body{
+	 font: 0.7em 'Montserrat', sans-serif;
+	 background-color: #eee;
+	 color: darkslategrey;
+	 text-align: center;
+ }
+
+ h1 {
+	 margin: 20px 0;
+	 padding-bottom: 20px;
+ }
+ h5 {
+	 font-size: 1.4em;
+	 font-weight: 500;
+	 margin: 5px 0;
+	}
+a {
+	text-decoration: none;
+}
+table {
+	width: 1350px;
+	table-layout: fixed;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+	width: 75px;
+	height: 75px;
+	text-align: left;
+	overflow: hidden;
+	padding: 0;
+}
+
+td a {
+	color: #000;
+}
+
+td a:hover {
+	text-decoration: none;
+}
+
+footer {
+	background-color: #000;
+	color: #ffffff;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 10px;
+	bottom: 0;
+	position: fixed;
+}
+footer a {
+	color: #ccc;
+	text-decoration: underline;
+}
+
+section {
+	padding: 2px;
+}
+
+ /* cores dos elementos - tive aplicar a cor ao número, porque não consegui com o nome composto do tipo de elemento */
+.c1, .c6, .c7, .c8, .c9, .c17, .c15, .c16, .c17, .c34, .c35, .c53 {
+	background-color: #c6ecd8;
+}
+.c2, .c10, .c18, .c36, .c54, .c86 {
+	background-color: #ffe6ff;
+}
+.c3, .c11, .c19, .c37, .c55, .c87 {
+	background-color: #ffdd99;
+}
+.c4, .c12, .c20, .c38, .c56, .c88 {
+	background-color: #ffffb3;
+}
+.c13, .c31, .c49, .c50, .c81, .c82, .c83, .c84 {
+	background-color: #cceeff;
+}
+.c5, .c14, .c32, .c33, .c51, .c52, .c85 {
+	background-color: #b3ffec;
+}
+.c21, .c22, .c23, .c24, .c25, .c26, .c27, .c28, .c29, .c30, .c39, .c40, .c41, .c42, .c43, .c44, .c45, .c46, .c47, .c48, .c72, .c73, .c74, .c75, .c76, .c77, .c78, .c79, .c80, .c104, .c105, .c106, .c107, .c108  {
+	background-color: #ffcccc;
+}
+.c109, .c110, .c111, .c112, .c113, .c114, .c115, .c116, .c117, .c118 {
+	background-color: #ccc;
+}
+
+.c1, .c6, .c7, .c8, .c9, .c17, .c15, .c16, .c17, .c34, .c35, .c53 {
+	background-color: #c6ecd8;
+}
+.c2, .c10, .c18, .c36, .c54, .c86 {
+	background-color: #ffe6ff;
+}
+.c3, .c11, .c19, .c37, .c55, .c87 {
+	background-color: #ffdd99;
+}
+.c4, .c12, .c20, .c38, .c56, .c88 {
+	background-color: #ffffb3;
+}
+.c13, .c31, .c49, .c50, .c81, .c82, .c83, .c84 {
+	background-color: #cceeff;
+}
+.c5, .c14, .c32, .c33, .c51, .c52, .c85 {
+	background-color: #b3ffec;
+}
+.c21, .c22, .c23, .c24, .c25, .c26, .c27, .c28, .c29, .c30, .c39, .c40, .c41, .c42, .c43, .c44, .c45, .c46, .c47, .c48, .c72, .c73, .c74, .c75, .c76, .c77, .c78, .c79, .c80, .c104, .c105, .c106, .c107, .c108  {
+	background-color: #ffcccc;
+}
+.c109, .c110, .c111, .c112, .c113, .c114, .c115, .c116, .c117, .c118 {
+	background-color: #d9d9d9;
+}
+.c57, .c58, .c59, .c60, .c61, .c62, .c63, .c64, .c65, .c66, .c67, .c68, .c69, .c70, .c71 {
+	background-color: #dfbe9f;
+}
+.c89, .c90, .c91, .c92, .c93, .c94, .c95, .c96, .c97, .c98, .c99, .c100, .c101, .c102, .c103 {
+	background-color: #ffb3d9;
+}
+
+section:hover {
+	background-color: #000;
+	color: #fff;
+}
+.second_table {
+	margin-top: 50px;
+	width: 1125px;
+}
+
+ /* estilos da página show */
+ .main {
+	width: 975px;
+	margin-left: auto;
+  margin-right: auto;
+ }
+ .element {
+	 width: 170px;
+	 height: 170px;
+	 margin: 0 auto;
+	 padding: 20px;
+	 text-align: left;
+ }
+ .element h1 {
+	 font-size: 2.5em;
+ }
+ .rightbox, .leftbox {
+	 font-size: 1.2em;
+ }
+ .leftbox {
+	float:left; 
+	width: 350px;
+	padding: 0 50px;
+ }
+ .rightbox {
+	display: inline;
+	width: 500px;
+ }
+ .rightbox table {
+	width: 500px;
+	margin-left: 20px;
+}
+ .rightbox td {
+	border: 1px solid #ccc;
+	height: 35px;
+	padding-left: 12px;
+ }
+ .rightbox a {
+	text-decoration: underline;
+ }
+
+ .shells{
+	 display: inline;
+	 float:right;
+ }
+ .summary {
+	 font-size: 1.1em;
+	 text-align: justify;
+ }

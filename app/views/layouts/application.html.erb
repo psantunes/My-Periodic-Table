@@ -1,0 +1,30 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Periodic Table <%= " - " + @element["name"] if @element.present? %></title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%# javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application' %>
+    <%= stylesheet_link_tag 'application' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1>Periodic Table <%= " - " + @element["name"] if @element.present? %></h1>
+      </div>
+    </div>
+
+    <%= yield %>
+
+  <footer>Developed by <%= link_to "Antonio Paulo Serpa Antunes", "https://github.com/psantunes/", target: "_blank" %> for Hardfun Studios to view on desktops.</footer>
+
+  </body>
+</html>
